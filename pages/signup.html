@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Pawfect Pals</title>
+    <link rel="stylesheet" href="css\signup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Pawfect Pals</h1>
+      <p>A community for pet lovers</p>
+    </header>
+
+    <section>
+      <h2>Sign Up</h2>
+      <form
+        id="signupForm"
+        action="javascript:void(0);"
+        onsubmit="redirectToHome()"
+      >
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <label for="signupUsername" style="display: none">Username</label>
+          <input
+            type="text"
+            id="signupUsername"
+            placeholder="Username"
+            required
+          />
+
+          <label for="signupPassword" style="display: none">Password</label>
+          <input
+            type="password"
+            id="signupPassword"
+            placeholder="Password"
+            required
+          />
+
+          <label for="signupConfirmPassword" style="display: none"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            id="signupConfirmPassword"
+            placeholder="Confirm Password"
+            required
+          />
+
+          <button class="primary" type="submit">Sign Up</button>
+        </div>
+      </form>
+
+      <!-- Add navigation link to the login page -->
+      <p>Already a member? <a href="login.html">Login here</a></p>
+    </section>
+
+    <!-- Background Pattern Container -->
+    <div class="container"></div>
+
+    <script>
+      function redirectToHome() {
+        // Perform any necessary signup logic here
+
+        // Redirect to the home page
+        window.location.href = "login.html";
+
+        // Prevent the form from submitting in case you have AJAX or other custom logic
+        return false;
+      }
+    </script>
+  </body>
+</html>

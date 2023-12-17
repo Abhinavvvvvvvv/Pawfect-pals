@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pawfect Pals</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        background-color: #f8f9fa;
+        color: #333;
+        animation: fadeIn 1s ease-in-out;
+        overflow: hidden; /* Add this line to prevent potential scrollbars */
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh; /* Use viewport height instead of a percentage */
+        background-color: #313131;
+        background-image: radial-gradient(
+          rgba(255, 255, 255, 0.171) 2px,
+          transparent 0
+        );
+        background-size: 30px 30px;
+        background-position: -5px -5px;
+      }
+
+      header {
+        background-color: #1a1a1b;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        animation: slideInDown 1s ease-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+      }
+
+      @keyframes slideInDown {
+        from {
+          transform: translateY(-100%);
+        }
+
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      header:hover {
+        background-color: #333; /* Darker color on hover */
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 1.5rem;
+      }
+
+      section {
+        text-align: center;
+        padding: 4rem;
+        animation: fadeInUp 1s ease-out;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0
+        ); /* Set alpha channel to 0 for full transparency */
+      }
+
+      h2,
+      p {
+        color: #fff; /* Set text color to white */
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h2 {
+        color: #ffffff;
+      }
+
+      .primary,
+      .secondary {
+        text-decoration: none;
+        padding: 1.2rem 2.5rem;
+        margin: 1rem;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions on hover */
+      }
+
+      .primary {
+        background-color: #fff;
+        color: #1a1a1b;
+        border: 2px solid #1a1a1b;
+      }
+
+      .primary:hover {
+        background-color: #1a1a1b;
+        color: #fff;
+      }
+
+      .secondary {
+        background-color: #fff;
+        color: #1a1a1b;
+        border: 2px solid #1a1a1b;
+      }
+
+      .secondary:hover {
+        background-color: #1a1a1b;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <style>
+    .content {
+      display: block;
+      position: sticky;
+      overflow: hidden;
+      font-family: "Lato", sans-serif;
+      font-size: 35px;
+      line-height: 40px;
+      color: #ecf0f1;
+    }
+
+    .content__container {
+      font-weight: 600;
+      overflow: hidden;
+      height: 40px;
+      padding: 0 40px;
+      position: relative;
+    }
+
+    .content__container:before {
+      content: "[";
+      position: absolute;
+      left: 0;
+      top: -2px;
+      color: #16a085;
+      font-size: 42px;
+      line-height: 40px;
+      animation-name: opacity;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    .content__container:after {
+      content: "]";
+      position: absolute;
+      right: 0;
+      top: -2px;
+      color: #16a085;
+      font-size: 42px;
+      line-height: 40px;
+      animation-name: opacity;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    .content__container__text {
+      display: inline;
+      float: left;
+      margin: 0;
+    }
+
+    .content__container__list {
+      margin-top: 0;
+      padding-left: 110px;
+      text-align: left;
+      list-style: none;
+      animation-name: change;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+
+    .content__container__list__item {
+      line-height: 40px;
+      margin: 0;
+    }
+
+    @keyframes opacity {
+      0%,
+      100% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes change {
+      0%,
+      12.66%,
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+
+      16.66%,
+      29.32% {
+        transform: translate3d(0, -25%, 0);
+      }
+
+      33.32%,
+      45.98% {
+        transform: translate3d(0, -50%, 0);
+      }
+
+      49.98%,
+      62.64% {
+        transform: translate3d(0, -75%, 0);
+      }
+
+      66.64%,
+      79.3% {
+        transform: translate3d(0, -50%, 0);
+      }
+
+      83.3%,
+      95.96% {
+        transform: translate3d(0, -25%, 0);
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Pawfect Pals</h1>
+    </header>
+    <div class="container">
+      <div class="content">
+        <div class="content__container">
+          <p class="content__container__text">Hello</p>
+
+          <ul class="content__container__list">
+            <li class="content__container__list__item">Pawrents !</li>
+            <li class="content__container__list__item">Furrmoms !</li>
+            <li class="content__container__list__item">Furrdads !</li>
+            <li class="content__container__list__item">PetPals !</li>
+          </ul>
+        </div>
+      </div>
+      <section>
+        <h2>Welcome to Pawfect Pals!</h2>
+        <p>Where furry friends find their forever home !</p>
+        <a class="primary" href="pages/signup.html">Join Now</a>
+      </section>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

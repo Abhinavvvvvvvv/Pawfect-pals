@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Pawfect Pals</title>
+  <link rel="stylesheet" href="css/login.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Pawfect Pals</h1>
+    <p>A community for pet lovers</p>
+  </header>
+
+  <section>
+    <h2>Login</h2>
+    <form id="loginForm" action="javascript:void(0);" onsubmit="redirectToHome()">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <label for="loginUsername" style="display: none;">Username</label>
+        <input type="text" id="loginUsername" placeholder="Username" required>
+
+        <label for="loginPassword" style="display: none;">Password</label>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        
+        <button class="primary" type="submit">Login</button>
+      </div>
+    </form>
+
+    <!-- Add navigation links to the signup and home pages -->
+    <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    <p>Explore without an account? <a href="home.html">Continue to Home</a></p>
+  </section>
+
+  <script>
+    function redirectToHome() {
+      // Perform any necessary login logic here
+
+      // Redirect to the home page
+      window.location.href = "home.html";
+
+      // Prevent the form from submitting in case you have AJAX or other custom logic
+      return false;
+    }
+  </script>
+</body>
+</html>

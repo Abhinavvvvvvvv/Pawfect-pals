@@ -1,0 +1,71 @@
+body {
+  background-color: #f6f7f8; /* Light gray background */
+  color: #1c1c1c; /* Dark gray text color */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1a1a1b; /* Dark gray header */
+  padding: 1rem;
+  text-align: center;
+  color: #fff; /* White text color */
+}
+
+section {
+  margin: 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: #1c1c1c; /* Dark gray heading color */
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a.primary {
+  background-color: #ffffff; /* White button background */
+  color: #1c1c1c; /* Dark gray text color */
+  padding: 0.8rem 1.5rem;
+  margin-left: 1rem;
+  text-decoration: none;
+  border-radius: 10px; /* Add a curve to the button */
+  border: 1px solid #1c1c1c; /* Dark gray border */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+a.primary:hover {
+  background-color: #1a1a1b; /* Dark gray background on hover */
+  color: #fff; /* White text color on hover */
+  transform: scale(1.05);
+}
+
+
+a.secondary {
+  background-color: #ffffff; /* White button background */
+  color: #1c1c1c; /* Dark gray text color */
+  padding: 0.8rem 1.5rem;
+  margin-left: 1rem;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid #1c1c1c; /* Dark gray border */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+a.secondary:hover {
+  background-color: #1a1a1b; /* Dark gray background on hover */
+  color: #fff; /* White text color on hover */
+  transform: scale(1.05);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+

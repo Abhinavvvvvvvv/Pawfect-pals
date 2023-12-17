@@ -1,0 +1,51 @@
+/* style.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background */
+    color: #495057;
+}
+
+header {
+    background-color: #343a40; /* Dark blue-grey header */
+    color: #ffffff; /* White text */
+    padding: 1rem;
+    text-align: center;
+}
+
+section {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #ffffff; /* White content background */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    margin-bottom: 1.5rem;
+}
+
+.bio-section p {
+    color: #6c757d; /* Dark grey text for bio */
+}
+
+.pet-section p {
+    color: #6c757d; /* Dark grey text for pet information */
+}
+
+/* Button styles */
+button {
+    background-color: #28a745; /* Green button background */
+    color: #ffffff; /* White text */
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
